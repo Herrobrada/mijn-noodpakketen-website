@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bestel hier je Noodpakket!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #f9fafb, #eef1f5);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6b6b, #feca57);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      padding: 25px;
+      width: 100%;
+      max-width: 360px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .product h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #ff6b6b;
+    }
+
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .product ul {
+      padding-left: 20px;
+      margin: 0 0 20px;
+      font-size: 0.95rem;
+    }
+
+    .product ul li {
+      margin-bottom: 8px;
+      list-style-type: circle;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #48dbfb;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0abde3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <h1>Bestel hier je noodpakket!</h1>
+    <p>Wees voorbereid. Zorg voor jezelf en je dierbaren in de eerste 72 uur van een crisis.</p>
+  </header>
+
+  <section style="background-color: #fff3cd; color: #856404; padding: 20px; text-align: center; font-size: 1.1rem; border-top: 2px solid #ffeeba; border-bottom: 2px solid #ffeeba;">
+    <p><strong>Pakketten zoals geadviseerd door</strong> <a href="https://www.denkvooruit.nl" target="_blank" style="color: #856404; text-decoration: underline;">denkvooruit.nl</a> – een initiatief van de Nederlandse overheid.</p>
+  </section>
+
+  <div class="container">
+    <!-- Basic pakket -->
+    <div class="product">
+      <h2>Basic Noodpakket (€80)</h2>
+      <p>Essentiële items om de eerste dagen te overbruggen.</p>
+      <ul>
+        <li>Drinkwater (3L p.p.p.d.)</li>
+        <li>Lang houdbaar voedsel(Genoeg eten voor drie dagen, o.a. Mais, bonen, Tonijn</li>
+        <li>Zaklamp + batterijen</li>
+        <li>Opwindbare radio</li>
+        <li>Kleine EHBO-kit</li>
+        <li>Tandpasta, doekjes & toiletpapier</li>
+        <li>Thermodeken</li>
+        <li>Fluitje</li>
+      </ul>
+      <a href="#" class="btn">Koop nu</a>
+    </div>
+
+    <!-- Premium pakket -->
+    <div class="product">
+      <h2>Premium Noodpakket (€150)</h2>
+      <p>Extra hulpmiddelen en comfort voor langere noodsituaties.</p>
+      <ul>
+        <li>Alles uit het Basic pakket</li>
+        <li>Multitool & ducttape</li>
+        <li>Waterzuiveringstabletten</li>
+        <li>Grote EHBO-kit met schaar</li>
+        <li>Powerbank (handmatig of solar)</li>
+        <li>Waterdichte poncho & kleding</li>
+        <li>Kaarsen + lucifers</li>
+        <li>Contant geld (advies)</li>
+      </ul>
+      <a href="#" class="btn">Koop nu</a>
+    </div>
+
+    <!-- Luxe pakket -->
+    <div class="product">
+      <h2>Luxe Noodpakket (€200)</h2>
+      <p>Maximale voorbereiding voor extreme situaties of gezinnen.</p>
+      <ul>
+        <li>Alles uit het Premium pakket</li>
+        <li>Opvouwbaar kooktoestel + brandstof</li>
+        <li>Solar lantaarn</li>
+        <li>Thermische kleding & mat</li>
+        <li>Notitieboek & potlood</li>
+        <li>Waterdichte tas + documentenhoes</li>
+        <li>Reservesleutels & adreslijst</li>
+      </ul>
+      <a href="#" class="btn">Koop nu</a>
+    </div>
+  </div>
+</body>
+</html>
